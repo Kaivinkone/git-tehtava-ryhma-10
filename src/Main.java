@@ -4,12 +4,19 @@ public class Main{
         Kahvinkeitin mocca = new Kahvinkeitin();
         mocca.vari = "Pinkki";
         mocca.merkki = "MoccaMasteri";
+        mocca.TulostaTiedot();
     }
 }// Main class end here
 
 class Kahvinkeitin{
     String vari;
     String merkki;
+    
+    //Construction
+    public Kahvinkeitin(){
+    	vari = "musta";
+    	merkki = "Electrolux";
+    }
 
     public void PaallePois(boolean on){
         if (on == true){
